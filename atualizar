@@ -1,1240 +1,212 @@
-{
-  "Version": "1.1.19",
-  "ReleaseNotes": "UPDATE TLS - 04/08/2022",
-  "UrlUpdate": "https://notabug.org/notabugbr/notabugbr1/raw/master/allow",
-  "Sms": "https://notabug.org/notabugbr/notabugbr1/raw/master/mensagem",
-  "EmailFeedback": "admin@linkbit.online",
-  "UrlContato": "suporte@linkbit.online",
-  "UrlTermos": "https://notabug.org/notabugbr/notabugbr1/raw/master/Termos",
-  "CheckUser": "true",
-  "Udp": [
-    {
-      "Porta": "7300"
-    },
-    {
-      "Porta": "7400"
-    },
-    {
-      "Porta": "7500"
-    },
-    {
-      "Porta": "7600"
-    },
-    {
-      "Porta": "7700"
-    }
-  ],
-  "Servers": [
-    {
-      "Name": "Linkbit01",
-      "TYPE": "premium",
-      "FLAG": "br.png",
-      "ServerIP": "brlinkbit.freedom-unlimited.tk",
-      "CheckUser": "http://191.252.191.173:5454/checkUser",
-      "ServerPort": "22",
-      "SSLPort": "443",
-      "USER": "",
-      "PASS": ""
-     },
-    {
-      "Name": "Linkbit02",
-      "TYPE": "premium",
-      "FLAG": "br.png",
-      "ServerIP": "serverbr4.linkbit.online",
-      "CheckUser": "http://45.179.88.227:5454/checkUser",
-      "ServerPort": "22",
-      "SSLPort": "443",
-      "USER": "",
-      "PASS": ""
-    },
-	{
-      "Name": "Linkbit03",
-      "TYPE": "premium",
-      "FLAG": "br.png",
-      "ServerIP": "dwzkxqie2d1go.cloudfront.net",
-      "CheckUser": "http://191.252.191.173:5454/checkUser",
-      "ServerPort": "22",
-      "SSLPort": "443",
-      "USER": "",
-      "PASS": ""
-     },
-  ],
-  "Networks": [
-{
-      "Name": "SUA OPERADORA",
-      "FLAG": "br.png",
-      "Payload": "GET ssl://gedoc.vivo.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "gedoc.vivo.com.br",
-      "TlsIP": "104.18.6.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "TIM-VIVO-CLARO-OI"
-   },
-{
-      "Name": "TIM 01",
-      "FLAG": "tim",
-      "Payload": "GET wss://materiais.alura.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "materiais.alura.com.br",
-      "TlsIP": "104.18.40.41",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-    {
-      "Name": "TIM 02",
-      "FLAG": "tim",
-      "Payload": "GET wss://blog.alura.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "blog.alura.com.br",
-      "TlsIP": "blog.alura.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-    {
-      "Name": "TIM 03",
-      "FLAG": "tim",
-      "Payload": "GET wss://materiais.alura.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "materiais.alura.com.br",
-      "TlsIP": "104.18.40.41",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-   
-    {
-      "Name": "TIM 04",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "www.alura.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-     { 
-      "Name": "TIM 05",
-      "FLAG": "tim",
-      "Payload": "GET wss://cursos.alura.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "cursos.alura.com.br",
-      "TlsIP": "cursos.alura.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "TIM 06",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "172.67.188.168",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "TIM 07",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: ws[crlf][crlf]",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "172.67.188.168",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "TIM 08",
-      "FLAG": "tim",
-      "Payload": "GET wss://empresas.alura.com.br  HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "www.alura.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "TIM 09",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: ws[crlf][crlf]",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "172.67.188.168",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "TIM 10",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: ws[crlf][crlf]",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "172.67.188.168",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "TIM 11",
-      "FLAG": "tim",
-      "Payload": "GET wss://gestao360.cielo.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "gestao360.cielo.com.br",
-      "TlsIP": "104.16.19.94",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-  {
-      "Name": "TIM 12",
-      "FLAG": "tim",
-      "Payload": "GET wss://suporte.neon.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "suporte.neon.com.br",
-      "TlsIP": "172.67.165.192",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-   {
-      "Name": "TIM 13",
-      "FLAG": "tim",
-      "Payload": "GET wss://suporte.neon.com.br/ HTTP/1.1[crlf]Host: brlinkbit.freedom-unlimited.tk[crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
-      "SNI": "suporte.neon.com.br",
-      "TlsIP": "104.21.22.126",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
- {
-      "Name": "TIM 14",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.bitz.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.bitz.com",
-      "TlsIP": "172.67.165.192",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "TIM 15",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.bitz.com/ HTTP/1.1[crlf]Host: brlinkbit.freedom-unlimited.tk[crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
-      "SNI": "www.bitz.com",
-      "TlsIP": "104.21.22.126",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-  {
-      "Name": "Vivo e Tim 01",
-      "FLAG": "tim",
-      "Payload": "GET ws://bobcontents.bennuapp.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "bobcontents.bennuapp.com.br",
-      "TlsIP": "104.16.133.83",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Vivo e Tim 02",
-      "FLAG": "tim",
-      "Payload": "GET ws://m.timbancavirtual.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "m.timbancavirtual.com.br",
-      "TlsIP": "104.16.133.83",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-   {
-      "Name": "Vivo e Tim 03",
-      "FLAG": "tim",
-      "Payload": "GET ws://www.timbancavirtual.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "m.timbancavirtual.com.br",
-      "TlsIP": "104.16.133.83",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-   {
-      "Name": "VIVO 01",
-      "FLAG": "vivo",
-      "Payload": "GET wss://money-staging.infinitepay.io HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "money-staging.infinitepay.io",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "VIVO 02",
-      "FLAG": "vivo",
-      "Payload": "GET wss://money-staging.infinitepay.io HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "money-staging.infinitepay.io",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "VIVO 03",
-      "FLAG": "vivo",
-      "Payload": "GET ws://suporte.neon.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n", 
-      "SNI": "suporte.neon.com.br",
-      "TlsIP": "104.18.6.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "VIVO 04",
-      "FLAG": "vivo",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "104.24.10.16",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "VIVO 05",
-      "FLAG": "vivo",
-      "Payload": "GET ws://www.bitz.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n", 
-      "SNI": "www.bitz.com",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "VIVO 06",
-      "FLAG": "vivo",
-      "Payload": "GET wss://carrinho-pos-familia.vivo.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "carrinho-pos-familia.vivo.com.br",
-      "TlsIP": "172.64.131.2",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "VIVO 07",
-      "FLAG": "vivo",
-      "Payload": "GET wss://portaljud.vivo.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "portaljud.vivo.com.br",
-      "TlsIP": "172.64.131.2",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-      },
-     {
-      "Name": "VIVO 08", 
-      "FLAG": "vivo", 
-      "Payload": "GET wss://fly218.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n", 
-      "SNI": "fly218.com", 
-      "TlsIP": "fly218.com", 
-      "ProxyIP": "", 
-      "ProxyPort": "443", 
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "VIVO 09", 
-      "FLAG": "vivo", 
-      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]", 
-      "SNI": "", 
-      "TlsIP": "", 
-      "ProxyIP": "172.67.165.43", 
-      "ProxyPort": "80", 
-      "Info": "Proxy"
-   },
-   {
-      "Name": "VIVO 10",
-      "FLAG": "vivo",
-      "Payload": "GET /? HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf][crlf]",
-      "SNI": "",
-      "TlsIP": "",
-      "ProxyIP": "104.21.11.51",
-      "ProxyPort": "80",
-      "Info": "Proxy"
-   },
-   {
-      "Name": "VIVO 11",
-      "FLAG": "vivo",
-      "Payload": "GET wss://support.pokemon.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "support.pokemon.com",
-      "TlsIP": "172.64.130.2",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   { 
-      "Name": "VIVO 12", 
-      "FLAG": "vivo", 
-      "Payload": "GET wss://live.vivo.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n", 
-      "SNI": "live.vivo.com.br", 
-      "TlsIP": "unpkg.com", 
-      "ProxyIP": "unpkg.com", 
-      "ProxyPort": "80", 
-      "Info": "Proxy" 
-   },
-   {
-      "Name": "VIVO 13",
-      "FLAG": "vivo",
-      "Payload": "GET wss://legado.vivo.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "legado.vivo.com.br",
-      "TlsIP": "104.21.11.51",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "VIVO 14",
-      "FLAG": "vivo",
-      "Payload": "GET ws://telefonica.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "telefonica.com.br",
-      "TlsIP": "telefonica.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-  {
-      "Name": "VIVO 15",
-      "FLAG": "vivo",
-      "Payload": "GET ws://vivo.gateway.zup.me HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "104.18.7.80",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
+FAÇA SUAS COMPRAS NO REDE GOL SUPERMECADO E ECONOMIZE! 
+(Supermercado de Titico Caifor) muitas variedades para você, além do melhor preço, entregam a domicilio de suas compras. 
+Tem carne de primeira, material de limpeza e muito mais. Entregas a domicílio. Rede Gol Supermercado, Avenida José Pedro de Azevedo, próximo a câmara dos vereadores, no centro de nossa cidade
 
-    {
-      "Name": "OI 01",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "104.16.52.91",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "OI 02",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "104.16.55.91",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "OI 03",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Connection: keep-alive[crlf]Upgrade: ws[crlf]Proxy-Connection: keep-alive[crlf]X-Forwarded-For: [app_host][crlf]X-Online-Host: [app_host][crlf]X-Forward-Host: [app_host][crlf]User-Agent: [ua][crlf][crlf]",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "104.16.52.91",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "OI 04",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.noggin.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.noggin.com.br",
-      "TlsIP": "172.67.143.4",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-{
-      "Name": "OI 05",
-      "FLAG": "oi",
-      "Payload": "GET \/ HTTP\/1.3[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "oii.gdmhost.ga",
-      "TlsIP": "oii.gdmhost.ga",
-      "ProxyIP": "oii.gdmhost.ga",
-      "ProxyPort": "80",
-      "Info": "proxy"
-  },
-  {
-      "Name": "OI 06",
-      "FLAG": "oi",
-      "Payload": "GET \/ HTTP\/1.3[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "oii.gdmhost.ga",
-      "TlsIP": "oii.gdmhost.ga",
-      "ProxyIP": "oii.gdmhost.ga",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  }, 
-  {
-      "Name": "OI 07",
-      "FLAG": "oi",
-      "Payload": "GET ws://www.hbogo.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "www.hbogo.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },  
-  {
-      "Name": "OI 08",
-      "FLAG": "oi",
-      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "[app_host]",
-      "TlsIP": "104.16.51.91",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-    {
-      "Name": "OI 09",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Connection: keep-alive[crlf]Upgrade: ws[crlf]Proxy-Connection: keep-alive[crlf]X-Forwarded-For: [app_host][crlf]X-Online-Host: [app_host][crlf]X-Forward-Host: [app_host][crlf]User-Agent: [ua][crlf][crlf]",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "104.16.54.91",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-   {
-      "Name": "CLARO 01",
-      "FLAG": "claro",
-      "Payload": "GET wss://descomplica.com.br HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "No.descomplica.com.br",
-      "TlsIP": "No.descomplica.com.br",
-      "ProxyIP": "No.descomplica.com.br",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "CLARO 02",
-      "FLAG": "claro",
-      "Payload": "GET wss://ct.livestream.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "ct.livestream.com",
-      "TlsIP": "ct.livestream.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "CLARO 03",
-      "FLAG": "claro",
-      "Payload": "GET wss://uploads.api.new.livestream.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "uploads.api.new.livestream.com",
-      "TlsIP": "uploads.api.new.livestream.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "CLARO 04",
-      "FLAG": "claro",
-      "Payload": "GET wss://br.corp.kaltura.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "br.corp.kaltura.com",
 
-"TlsIP": "br.corp.kaltura.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "CLARO 05",
-      "FLAG": "claro",
-      "Payload": "GET wss://lp.livestream.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "lp.livestream.com",
-      "TlsIP": "lp.livestream.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "CLARO 06",
-      "FLAG": "claro",
-      "Payload": "GET wss://vimeo.livestream.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "vimeo.livestream.com",
-      "TlsIP": "vimeo.livestream.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "CLARO 07",
-      "FLAG": "claro",
-      "Payload": "GET wss://ipv4.icanhazip.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "ipv4.icanhazip.com",
-      "TlsIP": "ipv4.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "CLARO 08",
-      "FLAG": "claro",
-      "Payload": "GET wss://icanhazip.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "icanhazip.com",
-      "TlsIP": "icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "CLARO 09",
-      "FLAG": "claro",
-      "Payload": "GET wss://go.kaltura.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "go.kaltura.com",
-      "TlsIP": "go.kaltura.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "CLARO 10",
-      "FLAG": "claro",
-      "Payload": "GET wss://br.corp.kaltura.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "br.corp.kaltura.com",
-      "TlsIP": "br.corp.kaltura.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
- {
-      "Name": "CLARO 11(novo)", 
-      "FLAG": "vivo", 
-      "Payload": "GET wss://fly218.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n", 
-      "SNI": "fly218.com", 
-      "TlsIP": "fly218.com", 
-      "ProxyIP": "", 
-      "ProxyPort": "443", 
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "CLARO 12(novo)", 
-      "FLAG": "vivo", 
-      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]", 
-      "SNI": "", 
-      "TlsIP": "", 
-      "ProxyIP": "172.67.165.43", 
-      "ProxyPort": "80", 
-      "Info": "Proxy"
-   },
-   {
-      "Name": "CLARO 13(novo)",
-      "FLAG": "claro",
-      "Payload": "GET wss://www.icanhazip.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.icanhazip.com",
-      "TlsIP": "www.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-  },
-  {
-      "Name": "CLARO 14(novo)",
-      "FLAG": "claro",
-      "Payload": "GET wss://www.icanhazip.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "www.icanhazip.com",
-      "TlsIP": "www.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "CLARO 15(novo)",
-      "FLAG": "claro",
-      "Payload": "GET wss://4.icanhazip.com HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
-      "SNI": "4.icanhazip.com",
-      "TlsIP": "4.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-  },
-  {
-      "Name": "CLARO 16(novo)",
-      "FLAG": "claro",
-      "Payload": "GET wss://4.icanhazip.com HTTP/1.1\nHost: brlinkbit.freedom-unlimited.tk\nUpgrade: ws\n\n",
-      "SNI": "4.icanhazip.com",
-      "TlsIP": "4.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-{
-      "Name": "🏅Server 02-TIM 01",
-      "FLAG": "tim",
-      "Payload": "GET wss://materiais.alura.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "materiais.alura.com.br",
-      "TlsIP": "104.18.40.41",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-    {
-      "Name": "Server 02-TIM 02",
-      "FLAG": "tim",
-      "Payload": "GET wss://blog.alura.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "blog.alura.com.br",
-      "TlsIP": "blog.alura.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-    {
-      "Name": "Server 02-TIM 03",
-      "FLAG": "tim",
-      "Payload": "GET wss://materiais.alura.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "materiais.alura.com.br",
-      "TlsIP": "104.18.40.41",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-   
-    {
-      "Name": "Server 02-TIM 04",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "www.alura.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-     { 
-      "Name": "Server 02-TIM 05",
-      "FLAG": "tim",
-      "Payload": "GET wss://cursos.alura.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "cursos.alura.com.br",
-      "TlsIP": "cursos.alura.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-TIM 06",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: ws[crlf][crlf]",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "172.67.188.168",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-TIM 07",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "172.67.188.168",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-TIM 08",
-      "FLAG": "tim",
-      "Payload": "GET wss://empresas.alura.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "www.alura.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-TIM 09",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: ws[crlf][crlf]",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "172.67.188.168",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "Server 02-TIM 10",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: ws[crlf][crlf]",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "172.67.188.168",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "Server 02-TIM 11",
-      "FLAG": "tim",
-      "Payload": "GET wss://gestao360.cielo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "gestao360.cielo.com.br",
-      "TlsIP": "104.16.19.94",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-  {
-      "Name": "Server 02-TIM 12",
-      "FLAG": "tim",
-      "Payload": "GET wss://suporte.neon.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "suporte.neon.com.br",
-      "TlsIP": "172.67.165.192",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-   {
-      "Name": "Server 02-TIM 13",
-      "FLAG": "tim",
-      "Payload": "GET wss://suporte.neon.com.br/ HTTP/1.1[crlf]Host: serverbr4.linkbit.online[crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
-      "SNI": "suporte.neon.com.br",
-      "TlsIP": "104.21.22.126",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
- {
-      "Name": "Server 02-TIM 14",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.bitz.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.bitz.com",
-      "TlsIP": "172.67.165.192",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-TIM 15",
-      "FLAG": "tim",
-      "Payload": "GET wss://www.bitz.com/ HTTP/1.1[crlf]Host: serverbr4.linkbit.online[crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
-      "SNI": "www.bitz.com",
-      "TlsIP": "104.21.22.126",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-  {
-      "Name": "Server 02-Vivo e Tim 01",
-      "FLAG": "tim",
-      "Payload": "GET ws://bobcontents.bennuapp.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "bobcontents.bennuapp.com.br",
-      "TlsIP": "104.16.133.83",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-Vivo e Tim 02",
-      "FLAG": "tim",
-      "Payload": "GET ws://m.timbancavirtual.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "m.timbancavirtual.com.br",
-      "TlsIP": "104.16.133.83",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-   {
-      "Name": "Server 02-Vivo e Tim 03",
-      "FLAG": "tim",
-      "Payload": "GET ws://www.timbancavirtual.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "m.timbancavirtual.com.br",
-      "TlsIP": "104.16.133.83",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-   {
-      "Name": "Server 02-VIVO 01",
-      "FLAG": "vivo",
-      "Payload": "GET wss://money-staging.infinitepay.io HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "money-staging.infinitepay.io",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-VIVO 02",
-      "FLAG": "vivo",
-      "Payload": "GET wss://money-staging.infinitepay.io HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "money-staging.infinitepay.io",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-VIVO 03",
-      "FLAG": "vivo",
-      "Payload": "GET ws://suporte.neon.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n", 
-      "SNI": "suporte.neon.com.br",
-      "TlsIP": "104.18.6.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-VIVO 04",
-      "FLAG": "vivo",
-      "Payload": "GET wss://www.alura.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.alura.com.br",
-      "TlsIP": "104.24.10.16",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-VIVO 05",
-      "FLAG": "vivo",
-      "Payload": "GET ws://www.bitz.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n", 
-      "SNI": "www.bitz.com",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-VIVO 06",
-      "FLAG": "vivo",
-      "Payload": "GET wss://carrinho-pos-familia.vivo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "carrinho-pos-familia.vivo.com.br",
-      "TlsIP": "172.64.131.2",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-VIVO 07",
-      "FLAG": "vivo",
-      "Payload": "GET wss://portaljud.vivo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "portaljud.vivo.com.br",
-      "TlsIP": "172.64.131.2",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-      },
-     {
-      "Name": "Server 02-VIVO 08", 
-      "FLAG": "vivo", 
-      "Payload": "GET wss://fly218.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n", 
-      "SNI": "fly218.com", 
-      "TlsIP": "fly218.com", 
-      "ProxyIP": "", 
-      "ProxyPort": "443", 
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "Server 02-VIVO 09", 
-      "FLAG": "vivo", 
-      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]", 
-      "SNI": "", 
-      "TlsIP": "", 
-      "ProxyIP": "172.67.165.43", 
-      "ProxyPort": "80", 
-      "Info": "Proxy"
-   },
-   {
-      "Name": "Server 02-VIVO 10",
-      "FLAG": "vivo",
-      "Payload": "GET /? HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf][crlf]",
-      "SNI": "",
-      "TlsIP": "",
-      "ProxyIP": "104.21.11.51",
-      "ProxyPort": "80",
-      "Info": "Proxy"
-   },
-   {
-      "Name": "Server 02-VIVO 11",
-      "FLAG": "vivo",
-      "Payload": "GET wss://support.pokemon.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "support.pokemon.com",
-      "TlsIP": "172.64.130.2",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   { 
-      "Name": "Server 02-VIVO 12", 
-      "FLAG": "vivo", 
-      "Payload": "GET wss://live.vivo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n", 
-      "SNI": "live.vivo.com.br", 
-      "TlsIP": "unpkg.com", 
-      "ProxyIP": "unpkg.com", 
-      "ProxyPort": "80", 
-      "Info": "Proxy" 
-   },
-   {
-      "Name": "Server 02-VIVO 13",
-      "FLAG": "vivo",
-      "Payload": "GET wss://legado.vivo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "legado.vivo.com.br",
-      "TlsIP": "104.21.11.51",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "Server 02-VIVO 14",
-      "FLAG": "vivo",
-      "Payload": "GET ws://telefonica.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "telefonica.com.br",
-      "TlsIP": "telefonica.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-  {
-      "Name": "Server 02-VIVO 15",
-      "FLAG": "vivo",
-      "Payload": "GET ws://vivo.gateway.zup.me HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "104.18.7.80",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
 
-    {
-      "Name": "Server 02-OI 01",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "104.16.52.91",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-OI 02",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "104.16.55.91",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-OI 03",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "104.16.52.91",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-OI 04",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.noggin.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.noggin.com.br",
-      "TlsIP": "172.67.143.4",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-{
-      "Name": "Server 02-OI 05",
-      "FLAG": "oi",
-      "Payload": "GET \/ HTTP\/1.3[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "oii.gdmhost.ga",
-      "TlsIP": "oii.gdmhost.ga",
-      "ProxyIP": "oii.gdmhost.ga",
-      "ProxyPort": "80",
-      "Info": "proxy"
-  },
-  {
-      "Name": "Server 02-OI 06",
-      "FLAG": "oi",
-      "Payload": "GET \/ HTTP\/1.3[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "oii.gdmhost.ga",
-      "TlsIP": "oii.gdmhost.ga",
-      "ProxyIP": "oii.gdmhost.ga",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  }, 
-  {
-      "Name": "Server 02-OI 07",
-      "FLAG": "oi",
-      "Payload": "GET ws://www.hbogo.com.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "www.hbogo.com.br",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },  
-  {
-      "Name": "Server 02-OI 08",
-      "FLAG": "oi",
-      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "[app_host]",
-      "TlsIP": "104.16.51.91",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  },
-    {
-      "Name": "Server 02-OI 09",
-      "FLAG": "oi",
-      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.hbogo.com.br",
-      "TlsIP": "104.16.54.91",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-   {
-      "Name": "Server 02-CLARO 01",
-      "FLAG": "claro",
-      "Payload": "GET wss://descomplica.com.br HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "No.descomplica.com.br",
-      "TlsIP": "No.descomplica.com.br",
-      "ProxyIP": "No.descomplica.com.br",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
-    {
-      "Name": "Server 02-CLARO 02",
-      "FLAG": "claro",
-      "Payload": "GET wss://ct.livestream.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "ct.livestream.com",
-      "TlsIP": "ct.livestream.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-CLARO 03",
-      "FLAG": "claro",
-      "Payload": "GET wss://uploads.api.new.livestream.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "uploads.api.new.livestream.com",
-      "TlsIP": "uploads.api.new.livestream.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-CLARO 04",
-      "FLAG": "claro",
-      "Payload": "GET wss://br.corp.kaltura.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "br.corp.kaltura.com",
 
-"TlsIP": "br.corp.kaltura.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-CLARO 05",
-      "FLAG": "claro",
-      "Payload": "GET wss://lp.livestream.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "lp.livestream.com",
-      "TlsIP": "lp.livestream.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-CLARO 06",
-      "FLAG": "claro",
-      "Payload": "GET wss://vimeo.livestream.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "vimeo.livestream.com",
-      "TlsIP": "vimeo.livestream.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-CLARO 07",
-      "FLAG": "claro",
-      "Payload": "GET wss://ipv4.icanhazip.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "ipv4.icanhazip.com",
-      "TlsIP": "ipv4.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-CLARO 08",
-      "FLAG": "claro",
-      "Payload": "GET wss://icanhazip.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "icanhazip.com",
-      "TlsIP": "icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-CLARO 09",
-      "FLAG": "claro",
-      "Payload": "GET wss://go.kaltura.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "go.kaltura.com",
-      "TlsIP": "go.kaltura.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-    {
-      "Name": "Server 02-CLARO 10",
-      "FLAG": "claro",
-      "Payload": "GET wss://br.corp.kaltura.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "br.corp.kaltura.com",
-      "TlsIP": "br.corp.kaltura.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-    },
- {
-      "Name": "Server 02-CLARO 11(novo)", 
-      "FLAG": "vivo", 
-      "Payload": "GET wss://fly218.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n", 
-      "SNI": "fly218.com", 
-      "TlsIP": "fly218.com", 
-      "ProxyIP": "", 
-      "ProxyPort": "443", 
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "Server 02-CLARO 12(novo)", 
-      "FLAG": "vivo", 
-      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]", 
-      "SNI": "", 
-      "TlsIP": "", 
-      "ProxyIP": "172.67.165.43", 
-      "ProxyPort": "80", 
-      "Info": "Proxy"
-   },
-   {
-      "Name": "Server 02-CLARO 13(novo)",
-      "FLAG": "claro",
-      "Payload": "GET wss://www.icanhazip.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.icanhazip.com",
-      "TlsIP": "www.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-  },
-  {
-      "Name": "Server 02-CLARO 14(novo)",
-      "FLAG": "claro",
-      "Payload": "GET wss://www.icanhazip.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "www.icanhazip.com",
-      "TlsIP": "www.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-   },
-   {
-      "Name": "Server 02-CLARO 15(novo)",
-      "FLAG": "claro",
-      "Payload": "GET wss://4.icanhazip.com HTTP/1.1\nHost: serverbr4.linkbit.online\nUpgrade: ws\n\n",
-      "SNI": "4.icanhazip.com",
-      "TlsIP": "4.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-  },
-  {
-      "Name": "Server 02-CLARO 16(novo)",
-      "FLAG": "claro",
-      "Payload": "GET wss://4.icanhazip.com HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
-      "SNI": "4.icanhazip.com",
-      "TlsIP": "4.icanhazip.com",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-  }
-  ]
-}
+
+
+
+DÔCO ÁGUA E GÁS 
+Seu gás ou água acabou? Ligue para Dôco ele entrega em sua residência imediatamente ligue 98837-4629.
+Ou fale pelo Whatsapp: 9- 8701-6381
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GELIN VIAGENS FRETES E ENCOMENDAS.
+
+QUER VIAJAR COM CONFORTO E TRANQUILIDADE? AGENDE AGORA MESMO, SAIDA PARA ASSÚ
+AS 13:20 E VOLTA PARA SÃO RAFAEL AS 17:00.
+
+PRECISA MANDAR ENCOMENDAS OU TRAZER DE ASSU? FALE AGORA MESMO COM GELIN VIAGENS
+
+O GELIN VIAGENS TRABALHA COM FRETES PARA ASSÚ E REGIÃO.
+
+PARA AGENDAMENTOS, FRETES E ENCOMENDA, ENTRE EM CONTATO PELO WHATSAPP: 9 8878-8155
+OU LIGUE: 9 9706-2395
+
+
+
+
+A LOJA SIMPLES & BELLA
+Já passou nas Lojas Simples e Bela e Multcoisa?, Lá você vai encontrar lindas Lukes, tanto feminino como masculino. 
+A loja tem uma diversidade em modas, passa e confira.
+Na Multcoisa, tem utensílios domésticos como: alumínios, plásticos, pratos, talheres e muito mais.
+Aproveite! 
+Passe agora mesmo na Simples e Bela e Multcoisas.
+
+Rua Ronaldo Pinheiro Travares, 88, em frente ao Galpão da Feira.
+Org: Toinho e Cicí.
+
+
+
+
+
+
+
+Micro Mercado Glória é o preferido da dona de Casa!
+
+As melhores ofertas você encontra lá. Suas feiras custam bem menos no Micro Mercado Glória, que além de produtos alimentícios, dispõe de materiais de higiene e limpeza, utilidades domésticas, açougue e muito mais, tem carne fresquinha todo dia e a melhor carne de Sol da cidade. Tudo que você precisa o Micro Mercado Glória têm. Ah! As compras acima de R$ 30,00 e pagando a vista, você ainda tem 5% de descontos. Rua Juvêncio Soares, 385, centro aqui de São Rafael. 
+
+Org.: Glorinha, Dedé e Chuchu.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+PARA QUEM PROCURA O MELHOR NA HORA DE MOBILIAR SUA RESIDÊNCIA, VISITA VITAL MÓVEIS
+Tem: Jogos de quarto, sala, e cozinha; eletrodoméstica como geladeira, televisão, maquina de lavar, tanquinho e muito mais e ainda, com os melhores preços da cidade e as melhores condições de pagamento que você procura. 
+É hora de comprar móveis para sua casa? - Então visite a Vitais Móveis, bem no centro da cidade, ao lado da CAERNE. 
+Consulte os preços Whatsapp para atendimento: 9 8117-3849.
+
+
+
+
+
+
+
+
+
+SABE ONDE VOCÊ ENCONTRA BEBIDAS, REFRIGENTES E MUITO MAIS PARA SEU EVENTO OU FESTAS?
+FALO DO MINI MERCADINHO O CALÇADÃO tem o maior depósito de bebidas da cidade! E com o menor preço. Quer economizar? Passa lá - Gênero alimentícios, material de limpeza, higiene pessoal, água mineral e gás de cozinha 
+Disque entrega água e gás: ligue:  9 8747-6626 ou 9 8829-9095. Mini Mercadinho O Calçadão ao lado da Farmácia Barros, centro da cidade.
+Organização: Gilcivan e Fátima
+
+
+
+
+
+
+
+
+
+FRUTARIA NOSSA SENHORA DA CONCEIÇÃO, está aberto todos os dias e têm frutas fresquinhas. Compre já suas frutas e verduras na Frutaria Nossa Senhora da Conceição, fica na rua José Bezerra de Araújo em frente a casa de Antonio Henrique.
+Informações: 9 8899-5469 - Abre todos os dias das 07:20  as 12:00 e das 14:30 as 17:30  Org: Consuelo e Família
+
+
+
+
+
+
+
+
+
+
+
+
+CLIENTE DO SUPERMERCADO AVISTÃO É CLIENTE SATISFEITO; PELO MENOR PREÇO; MELHOR ATENDIMENTO E ENTREGA RÁPIDA! Supermercado Avistão tem: Sessões de frutas e verduras, de material de higiene e limpeza. Também sessão de plásticos e utilidades domésticas, açougue com carnes de qualidade e com menor preço da cidade. Quem vai até o supermercado Avistão, compra tudo o que precisa, em um só supermercado. Rua Presidente Cafe Filho,520, no centro da cidade.
+
+
+
+
+
+
+
+
+LOJÃO DA CONSTRUÇÃO, VOCÊ ENCONTRA TUDO PARA SUA OBRA. 
+Telha de primeira por apenas 550 e de segunda, 500 reais o milheiro.
+
+Tijolos de primeira por apenas 500 reais o milheiro e de segunda por apenas 450 reais.
+
+Temos madeira mista e maçaranduba, tábuas, ferros e treliças com preços especiais. 
+Consulte agora mesmo e solicite orçamento. Rua Governador José Augusto Varela, em frente à praça central.
+
+Organização: Amanda e Magno
+
+
+
+
+
+PRECISANDO DE MANUTENÇÃO NO SEU ARCOCONDICIONADO?
+
+A Top frios Refrigeração, faz Instalação, limpeza e manutenção em geral. Técnico especializado e credenciado.
+
+Tel. 98849-3428
+Org: Alison Pereira
+
+
+
+
+
+
+
+
+
+
+
+
+ROUPAS DA MODA. AS TENDÊNCIAS DA ATUAL ESTAÇÃO ESPERAM POR VOCÊ NA LOJA SANRRA BOUTIQUE. Vista sua família inteira com o que há de melhor. Do simples ao sofisticado, sempre com os melhores preços, e pagamento cheio de facilidades. Visite a loja e tenha o melhor em seu guarda-roupa. Sanrra Boutique. Avenida José Pedro de Azevedo, na antiga ótica Rayssa.
+
+
+
+
+
+
+
+
+
+
+
+JR MATERIAL DE CONSTRUÇÃO. Têm pisos Arielle, Sanitário convencional da marca Luzarte com 15% de desconto, material hidráulico e elétrico. Areia, cimento e coberturas. Da fundação até a caixa d’água, tudo em materiais de construção você encontra no J &R Material de Construção. Avenida Senador João Câmara, em frente à oficina de Zé Gordo. Telefone 8752-9344 ou 9 8634-4772. Aqui em São Rafael. Solicite orçamento sem compromisso. 
+
+Org: Ronaldo e Jaqueline
+
+
+
+
+
+
+
+
+
+MERCADINHO PAIS E FILHOS. Tudo em gêneros alimentícios, materiais de higiene e limpeza e utilidades domésticas. Dona de casa que sabe economizar compra mais no Mercadinho Pais e Filhos, o endereço dos melhores preços. 
+- Entregamos água e gás de cozinha a domicilio, basta ligue já 9 8861-2777 ou 9 8862-5526.
+-Rua José bezerra de Araújo, 23 centro bem próximo ao caldo de cana.
+Org: Ruzo e Família.
+
+
+
+
+
+
+
+
+
+
+ÁQUILA ÓTICA
+Ja realizou seu exame de vista? Então chegou a oportunidade, na Áquila ótica, sempre tem promoções para você. Consultas grátis na compra de sua armação; precos de a prazo e divide ate em 10 vezes sem juros - avista tem um super desconto!. 
+
+Marque sua consulta, tem exames de vista neste dia 14, a tarde. Ligue ou fale no whatzap: 9 8862-7066, falar com claílde ou pelo o intagram @aquila_otica 
+
+Áquila ótica a visao perfeita para seus olhos.
+
+
+
+
+
+
+
+
+A internet está evoluindo! E com o Link Baite você sai na frente. Conheça agora mesmo a melhor internet corporativa 4G! Faça como a maioria! Está preso ao WiFI? Com a nossa internet VPN você navega em qualquer lugar da cidade e interiores, saia dessa de ficar conectado apenas em casa. LinkBaite. 
+Trabalhamos com as operadoras: TIM, OI, CLARO, CORREIOS CELULAR e VIVO. É internet 4G de verdade, a partir de 10 reais mensais. Faça um teste sem compromisso, Whatsapp: 84 9 8190-3584.
