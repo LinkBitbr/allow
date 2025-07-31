@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha WebRadio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha WebRadio</h1>
+        <nav>
+            <ul>
+                <li><a href="#radio">Rádio</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="radio" class="player">
+        <h2>Ouça Agora</h2>
+        <audio id="audioPlayer" controls>
+            <source src="https://stream.example.com/webradio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </section>
+
+    <section id="programacao">
+        <h2>Programação</h2>
+        <ul>
+            <li><strong>08:00</strong> - Manhã Musical</li>
+            <li><strong>12:00</strong> - Notícias</li>
+            <li><strong>14:00</strong> - Especial do Dia</li>
+            <li><strong>18:00</strong> - Top Hits</li>
+            <li><strong>22:00</strong> - Madrugada Lounge</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <form id="contactForm">
+            <label for="name">Nome</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="message">Mensagem</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Minha WebRadio - Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
