@@ -1,0 +1,11 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "React client for electronics store",
+  "scripts": {
+    "start": "serve public"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
