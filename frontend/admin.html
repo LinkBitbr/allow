@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - AutoAnuncios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Painel Admin</h1>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Novo Veículo</h2>
+    <form id="form-add">
+      <input type="text" id="add-marca" placeholder="Marca" required>
+      <input type="text" id="add-modelo" placeholder="Modelo" required>
+      <input type="number" id="add-ano" placeholder="Ano" required>
+      <input type="number" id="add-preco" placeholder="Preço" required>
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+  <script>
+  document.getElementById('form-add').addEventListener('submit', async e => {
+    e.preventDefault();
+    const data = {
+      brand: document.getElementById('add-marca').value,
+      model: document.getElementById('add-modelo').value,
+      year: parseInt(document.getElementById('add-ano').value, 10),
+      price: parseFloat(document.getElementById('add-preco').value)
+    };
+    await fetch('/api/vehicles', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    alert('Veículo adicionado');
+  });
+  </script>
+</body>
+</html>
