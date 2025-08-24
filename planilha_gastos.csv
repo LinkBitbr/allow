@@ -1,0 +1,8 @@
+Tipo,Data,Descrição,Categoria,Valor,Observações
+Fixo,2023-01-05,Aluguel,Habitacao,1200,
+Fixo,2023-01-10,Internet,Utilidades,100,
+Variável,2023-01-02,Café,Alimentação,5,
+Variável,2023-01-03,Taxi,Transporte,30,
+Total Fixo,,,,=SUMIF(A:A,"Fixo",E:E)
+Total Variável,,,,=SUMIF(A:A,"Variável",E:E)
+Total Geral,,,,=SUM(E2:E5)
